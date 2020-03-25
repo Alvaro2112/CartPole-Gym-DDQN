@@ -10,15 +10,14 @@ To run it you will need the following dependencies:
 
 ```
 import gym
+import random
+import numpy as np
+import tensorflow as tf
+from collections import deque
+from matplotlib import pyplot as plt
 from tensorflow.compat.v1.keras.models import Sequential
 from tensorflow.compat.v1.keras.layers import Dense
 from tensorflow.compat.v1.keras.optimizers import Adam
-from collections import deque
-import numpy as np
-import random
-from matplotlib import pyplot as plt
-import tensorflow as tf
-import time
 ```
 
 ### Installing
@@ -34,7 +33,7 @@ git clone git@github.com:Alvaro2112/Solving-CartPole-Gym-environment-using-DDQN.
 To train the model you can simply run:
 
 ```
-python CartPole_Q.py 
+python CartPole_DQQ.py 
 ```
 
 If you wish, you can play around with the Hyperparameters to try to better the convergence time.
@@ -42,9 +41,11 @@ If you wish, you can play around with the Hyperparameters to try to better the c
 ### Results
 
 
-![Rewards vs Episodes](/rewards.jpg)
-![Rewards vs Episodes](/rewards.jpg)
-![Rewards vs Episodes](/rewards.jpg)
+![Rewards vs Episodes](/Reward per episode.jpg)
+![Smoothed Rewards vs Episodes](/Smoothed reward per episode.jpg)
+![Epsilon decay](/Epsilon value decay.jpg)
+
+Solving the environment may take more than 500 episodes sometimes.
 
 ## Built With
 
@@ -53,8 +54,3 @@ If you wish, you can play around with the Hyperparameters to try to better the c
 ## Authors
 
 * **Alvaro Caudéran**
-
-## Acknowledgments
-
-* Part of this code was taken from https://github.com/sanjitjain2/q-learning-for-cartpole/blob/master/qlearning.py
-
