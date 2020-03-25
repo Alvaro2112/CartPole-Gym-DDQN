@@ -41,11 +41,11 @@ If you wish, you can play around with the Hyperparameters to try to better the c
 ### Results
 
 
-![Rewards vs Episodes](/Reward per episode.jpg)
+![Rewards vs Episodes](/Reward_per_episode.jpg)
 
-![Smoothed Rewards vs Episodes](/Smoothed reward per episode.jpg)
+![Smoothed Rewards vs Episodes](/Smoothed_reward_per_episode.jpg)
 
-![Epsilon decay](/Epsilon value decay.jpg)
+![Epsilon decay](/Epsilon_value_decay.jpg)
 
 Solving the environment may take more than 500 episodes sometimes.
 
